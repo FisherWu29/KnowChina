@@ -1,0 +1,12 @@
+name = "knowchina-server"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Use wrangler secret put to set these in production:
+# ADMIN_TOKEN, SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE,
+# OPENAI_API_KEY, REVENUECAT_API_KEY, CRON_SECRET
+
+# Cron trigger: UTC 06:00 = Beijing 14:00 daily
+[triggers]
+crons = ["0 6 * * *"]

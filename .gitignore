@@ -1,0 +1,48 @@
+# ==================== Flutter ====================
+mobile/.dart_tool/
+mobile/build/
+mobile/ios/.symlinks/
+mobile/ios/Pods/
+mobile/android/.gradle/
+mobile/android/app/src/main/res/raw/
+mobile/android/app/src/main/res/values/values.xml
+
+# ==================== Node ====================
+server/node_modules/
+server/.wrangler/
+website/node_modules/
+website/dist/
+
+# ==================== Environment ====================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ==================== Secrets ====================
+*.jks
+*.keystore
+*.p12
+*-google-services.json
+*-GoogleService-Info.plist
+mobile/ios/fastlane/match/**
+mobile/android/fastlane/*.json
+
+# ==================== IDE ====================
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# ==================== OS ====================
+.DS_Store
+Thumbs.db
+
+# ==================== Scripts / Temp ====================
+*.log
+*.tmp
+*.bak
+
+# FVM Version Cache
+.fvm/

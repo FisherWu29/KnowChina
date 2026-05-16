@@ -1,0 +1,6 @@
+# iOS Fastlane configuration
+lane :release do
+  match(type: "appstore", readonly: true)
+  build_ios_app(scheme: "Runner", export_method: "app-store")
+  upload_to_app_store
+end

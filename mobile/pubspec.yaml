@@ -1,0 +1,60 @@
+name: knowchina
+description: KnowChina - Understand China's daily briefing and knowledge tool.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=3.41.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Routing
+  go_router: ^14.8.0
+
+  # Backend
+  supabase_flutter: ^2.8.4
+
+  # Payment
+  purchases_flutter: ^8.5.0
+
+  # Network
+  http: ^1.2.2
+
+  # Charts
+  fl_chart: ^0.70.2
+
+  # Local Storage
+  shared_preferences: ^2.3.5
+  isar: ^4.0.0-dev.14
+  isar_flutter_libs: ^4.0.0-dev.14
+
+  # Utilities
+  intl: ^0.20.2
+  flutter_markdown: ^0.7.6
+  url_launcher: ^6.3.1
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.4
+  build_runner: ^2.4.14
+  isar_generator: ^4.0.0-dev.14
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
+  # fonts:
+  #   - family: YourFont
+  #     fonts:
+  #       - asset: assets/fonts/YourFont-Regular.ttf

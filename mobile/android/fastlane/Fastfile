@@ -1,0 +1,10 @@
+# Android Fastlane configuration
+platform :android do
+  lane :release do
+    gradle(task: "assembleRelease")
+    upload_to_play_store(
+      track: 'internal',
+      json_key: "path/to/play-store-key.json"
+    )
+  end
+end

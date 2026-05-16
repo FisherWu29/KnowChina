@@ -1,0 +1,30 @@
+# .github/workflows/deploy-website.yml
+name: Deploy Website (Pages)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/**'
+      - 'marketing/**'
+      - '.github/workflows/deploy-website.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+        working-directory: ./website
+      - run: npm run build
+        working-directory: ./website
+      - uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: 'knowchina'
+          directory: 'website/dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
