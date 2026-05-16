@@ -13,7 +13,8 @@ A cross-platform mobile app that delivers objective, fact-based daily briefings 
 | `mobile/` | Flutter app (iOS + Android) |
 | `server/` | Cloudflare Workers (API, AI pipeline, cron jobs) |
 | `website/` | Cloudflare Pages (marketing website) |
-| `marketing/` | Media assets, copywriting, video materials |
+| `docs/` | Product, architecture, runbooks, and AI working context |
+| `ui/` | Design system, wireframes, prototypes, UI copy, and visual references |
 | `scripts/` | Cross-module utility scripts |
 | `.github/workflows/` | CI/CD pipelines |
 
@@ -43,6 +44,9 @@ See all commands: `make help`
 
 ## Documentation
 
+- [Docs Home](./docs/README.md)
+- [AI Context](./docs/AI_CONTEXT.md)
+- [UI Workspace](./ui/README.md)
 - [Product Planning](./产品规划.md)
 - [PRD](./PRD.md)
 - [Flutter Dev Guide](./Flutter跨平台App全流程开发指南.md)
