@@ -1,0 +1,911 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "KnowChina App Home",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$surface-app",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p3Zaz",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 62,
+          "fill": "$surface-app",
+          "padding": [
+            18,
+            22,
+            0,
+            22
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "eAJPD",
+              "name": "time",
+              "fill": "$text-primary",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "mbqgz",
+              "name": "Status Icons",
+              "gap": 7,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "kh7e6",
+                  "name": "signal",
+                  "width": 17,
+                  "height": 17,
+                  "iconFontName": "signal",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-primary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "nIfYw",
+                  "name": "wifi",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "wifi",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-primary"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "z5eOG",
+                  "name": "battery",
+                  "width": 21,
+                  "height": 21,
+                  "iconFontName": "battery-full",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-primary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jUROg",
+          "name": "Scrollable Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "$surface-app",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            4,
+            20,
+            14,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "s66Tm1",
+              "name": "Header",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ppwGA",
+                  "name": "Header Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S0ReC",
+                      "name": "brand",
+                      "fill": "$text-primary",
+                      "content": "KnowChina",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 30,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J647T3",
+                      "name": "date",
+                      "fill": "$text-secondary",
+                      "content": "Sat, May 16 • Daily briefing",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ibmHc",
+                  "name": "Profile Button",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "$surface-card",
+                  "cornerRadius": 21,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "VDyAS",
+                      "name": "profileIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-primary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "adOY1",
+              "name": "Top Story Card",
+              "width": "fill_container",
+              "fill": "$surface-inverse",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 9,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v19AIC",
+                  "name": "Top Story Meta",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ghkkv",
+                      "name": "Top Story Badge",
+                      "fill": "#2A2A2A",
+                      "cornerRadius": 4,
+                      "gap": 6,
+                      "padding": [
+                        5,
+                        9
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "BFzzv",
+                          "name": "badgeDot",
+                          "fill": "$accent-red",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "dzuB4",
+                          "name": "badgeText",
+                          "fill": "#FFFFFF",
+                          "content": "TOP STORY",
+                          "fontFamily": "$font-body",
+                          "fontSize": 10,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "uymyD",
+                      "name": "readTime",
+                      "fill": "#BDBDBD",
+                      "content": "4 min read",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "wxTNf",
+                  "name": "heroTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "China expands pilot rules for cross-border data flows",
+                  "lineHeight": 1.08,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 21,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "DYvQY",
+                  "name": "heroSummary",
+                  "fill": "#D6D6D6",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "New measures clarify how selected business data can move between mainland offices and overseas teams.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "JlI4u",
+                  "name": "Top Story Footer",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eoUq7",
+                      "name": "source",
+                      "fill": "#BDBDBD",
+                      "content": "Source: Xinhua English",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "XKreQ",
+                      "name": "arrow",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "arrow-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LMFg6",
+              "name": "Data of the Day",
+              "width": "fill_container",
+              "fill": "$surface-card",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-subtle"
+              },
+              "gap": 14,
+              "padding": 13,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NcGdt",
+                  "name": "Data Copy",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 5,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sRahP",
+                      "name": "dataLabel",
+                      "fill": "$accent-blue",
+                      "content": "DATA OF THE DAY",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "N4wgQ",
+                      "name": "dataTitle",
+                      "fill": "$text-primary",
+                      "content": "Manufacturing PMI",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "exUfz",
+                      "name": "dataNote",
+                      "fill": "$text-secondary",
+                      "content": "Official index, latest reading",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aEzn6",
+                  "name": "PMI Value",
+                  "width": 96,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F0PUOo",
+                      "name": "pmi",
+                      "fill": "$text-primary",
+                      "content": "50.8",
+                      "fontFamily": "$font-data",
+                      "fontSize": 30,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xnwWt",
+                      "name": "Trend",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "wLe4M",
+                          "name": "trendIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "trending-up",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-green"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iL1zF",
+                          "name": "trendText",
+                          "fill": "$accent-green",
+                          "content": "+0.4",
+                          "fontFamily": "$font-data",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CkAOn",
+              "name": "Briefing Header",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DBA0r",
+                  "name": "sectionTitle",
+                  "fill": "$text-primary",
+                  "content": "Today’s Briefing",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 23,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "q56lo0",
+                  "name": "Filter Button",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "$surface-card",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "taX8X",
+                      "name": "filterIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "sliders-horizontal",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-primary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Lh5Dg",
+              "name": "Briefing List",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zidbd",
+                  "name": "Briefing Item",
+                  "width": "fill_container",
+                  "fill": "$surface-card",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-subtle"
+                  },
+                  "gap": 10,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VLGFg",
+                      "name": "Section Mark",
+                      "width": 4,
+                      "height": "fill_container",
+                      "fill": "$accent-blue",
+                      "cornerRadius": 2,
+                      "layout": "vertical"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "e4O86",
+                      "name": "Item Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NgHnO",
+                          "name": "item1Title",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Foreign-investment list adds service-sector openings",
+                          "lineHeight": 1.22,
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TjcQY",
+                          "name": "item1Summary",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The update names pilot areas and sectors eligible for revised access rules.",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$font-body",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UopzI",
+                          "name": "item1Meta",
+                          "fill": "$text-muted",
+                          "content": "China Daily • 08:10 GMT",
+                          "fontFamily": "$font-body",
+                          "fontSize": 10,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zkVqY",
+              "name": "Knowledge Deep Dive",
+              "width": "fill_container",
+              "fill": "#EFE8DC",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#DED3C2"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 13,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "P1rhZ",
+                  "name": "Knowledge Top",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zAQog",
+                      "name": "knowledgeLabel",
+                      "fill": "$accent-red",
+                      "content": "KNOWLEDGE LINK",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "IKx7x",
+                      "name": "knowledgeIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "book-open",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-red"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZebKJ",
+                  "name": "knowledgeTitle",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "What is the Greater Bay Area?",
+                  "lineHeight": 1.12,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "PXO9Y",
+                  "name": "knowledgeBody",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Free definition now. Pro unlocks context, examples, and guided follow-ups.",
+                  "lineHeight": 1.28,
+                  "fontFamily": "$font-body",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jTk6w",
+              "name": "Pro Upgrade Strip",
+              "width": "fill_container",
+              "fill": "$surface-card",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$text-primary"
+              },
+              "gap": 10,
+              "padding": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VdtQq",
+                  "name": "Pro Icon",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$text-primary",
+                  "cornerRadius": 16,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "y2C9y",
+                      "name": "proIcon",
+                      "width": 17,
+                      "height": 17,
+                      "iconFontName": "sparkles",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EjKjf",
+                  "name": "Pro Copy",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 3,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Kk1AI",
+                      "name": "proTitle",
+                      "fill": "$text-primary",
+                      "content": "Unlock full summaries",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O3QJ7",
+                      "name": "proDesc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "History, deep dives, topic filters",
+                      "lineHeight": 1.2,
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "Tk7j8",
+                  "name": "proArrow",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-primary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CEnZh",
+          "name": "Bottom Bar Safe Area",
+          "width": "fill_container",
+          "height": 112,
+          "fill": "$surface-app",
+          "layout": "vertical",
+          "padding": [
+            12,
+            21,
+            21,
+            21
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "S1zGCD",
+              "name": "Pill Tab Bar",
+              "width": "fill_container",
+              "height": 62,
+              "fill": "$surface-card",
+              "cornerRadius": 36,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border-subtle"
+              },
+              "gap": 2,
+              "padding": 4,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zwsQA",
+                  "name": "Tab Home Active",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$text-primary",
+                  "cornerRadius": 26,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JjEnm",
+                      "name": "nav1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "newspaper",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vlHgy",
+                      "name": "nav1Text",
+                      "fill": "#FFFFFF",
+                      "content": "BRIEF",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o0Op5",
+                  "name": "Tab Archive",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "cornerRadius": 26,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "f3pth",
+                      "name": "nav2Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "archive",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y9sMAX",
+                      "name": "nav2Text",
+                      "fill": "$text-muted",
+                      "content": "ARCHIVE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KHGO0",
+                  "name": "Tab Data",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "cornerRadius": 26,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "S1i9Ej",
+                      "name": "nav3Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "chart-no-axes-column",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gpjwX",
+                      "name": "nav3Text",
+                      "fill": "$text-muted",
+                      "content": "DATA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ndkNY",
+                  "name": "Tab Pro",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "cornerRadius": 26,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ZzI7j",
+                      "name": "nav4Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "circle-user-round",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J7uqE",
+                      "name": "nav4Text",
+                      "fill": "$text-muted",
+                      "content": "PRO",
+                      "fontFamily": "$font-body",
+                      "fontSize": 10,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-blue": {
+      "type": "color",
+      "value": "#0B5FFF"
+    },
+    "accent-green": {
+      "type": "color",
+      "value": "#1E7D4F"
+    },
+    "accent-red": {
+      "type": "color",
+      "value": "#A7352A"
+    },
+    "border-subtle": {
+      "type": "color",
+      "value": "#E5E1D8"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-data": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Newsreader"
+    },
+    "surface-app": {
+      "type": "color",
+      "value": "#F7F6F2"
+    },
+    "surface-card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "surface-inverse": {
+      "type": "color",
+      "value": "#151515"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#8A8A8A"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#171717"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#666666"
+    }
+  }
+}
